@@ -1,5 +1,7 @@
 # TM2 view
 
+![Screenshot](Screenshot.png)
+
 Allows you to view TIM2 files, which is a texture format used by many PS2 games.
 
 Supported formats:
