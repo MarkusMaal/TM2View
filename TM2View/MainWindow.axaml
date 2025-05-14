@@ -1,0 +1,25 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        Width="480" Height="320"
+        x:Class="TM2View.MainWindow"
+        Title="TM2View">
+    <Grid RowDefinitions="Auto,*">
+        <DockPanel VerticalAlignment="Top">
+            <Menu DockPanel.Dock="Top">
+                <MenuItem Name="OpenMenuItem" Click="OpenMenuItem_OnClick" Header="Open" />
+                <MenuItem Name="InvBg" Click="InvBg_OnClick" Header="Invert background" />
+                <MenuItem Name="Mirror" Click="Mirror_OnClick" Header="Mirror" />
+                <MenuItem Name="Flip" Click="Flip_OnClick" Header="Flip" />
+                <MenuItem Click="MenuItem_OnClick" Header="Exit" />
+            </Menu>
+        </DockPanel>
+        <Panel Name="BackPanel" Background="Black" Grid.Row="1">
+            <Viewbox Stretch="Uniform" RenderOptions.BitmapInterpolationMode="None">
+                <Image Name="PreviewImage" Stretch="None" Width="128" Height="128"/>
+            </Viewbox>
+        </Panel>
+    </Grid>
+</Window>
